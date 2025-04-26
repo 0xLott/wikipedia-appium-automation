@@ -2,7 +2,7 @@
 <suite name="Suite">
     <test name="Test">
         <classes>
-            <class name="flows.StartAppTest"/>
+            <class name="flows.ManualStartTest"/>
         </classes>
     </test>
 </suite>

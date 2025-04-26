@@ -20,10 +20,6 @@ public class AndroidHomePage {
     }
 
     // Actions
-    public void openTray() {
-
-    }
-
     public void openWikipediaApp() {
         driver.executeScript("mobile: scrollGesture", ImmutableMap.of(
                 "left", 50,
