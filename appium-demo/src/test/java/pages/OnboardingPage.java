@@ -66,9 +66,9 @@ public class OnboardingPage {
         driver.findElement(language).click();
     }
 
-    private void sleep(int millisseconds) {
+    private void sleep(int milliseconds) {
         try {
-            Thread.sleep(millisseconds);
+            Thread.sleep(milliseconds);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
