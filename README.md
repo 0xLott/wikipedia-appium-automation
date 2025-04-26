@@ -1,6 +1,6 @@
 # Wikipedia Mobile App Automation
 
-Automated test suite for the Wikipedia mobile app using Appium.
+Automated test suite for the Wikipedia mobile app using Appium + TestNG.
 
 This repository contains end-to-end tests for the Wikipedia mobile app on Android and iOS platforms. The tests are written using Appium and TestNG.
 
@@ -63,11 +63,9 @@ appium -p 4725 --use-plugins=inspector --allow-cors
 ```json
 {
   "platformName": "Android",
-  "appium:options": {
-    "automationName": "UIAutomator2",
-    "platformVersion": "16.0",
-    "deviceName": "emulator-5554"
-  }
+  "appium:automationName": "UIAutomator2",
+  "appium:platformVersion": "16.0",
+  "appium:deviceName": "emulator-5554"
 }
 ```
 
