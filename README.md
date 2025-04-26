@@ -11,6 +11,7 @@ This repository contains end-to-end tests for the Wikipedia mobile app on Androi
 - Java JDK installed
 - Android SDK installed
 - ANDROID_HOME environment variable set
+- [Wikipedia .apk](https://f-droid.org/en/packages/org.wikipedia/)
 
 ## Installation
 
@@ -30,9 +31,26 @@ appium driver install uiautomator2
 appium plugin install --source=npm appium-inspector
 ```
 
+## Directory structure
+This is what this project's directory structure should look like:
+
+```
+.
+├── src/
+│   ├── app/
+│   │   └── org.wikipedia.apk
+│   └── test/
+│       └── java/
+│           ├── flows/
+│           └── pages/
+├── testng.xml
+└── pom.xml
+```
+
 ## Running Appium
 
-1. Start Appium Server with Inspector. I've found that using other port than the default (4723) is the most foolproof way.
+1. Add Wikipedia .apk file to `src/app/org.wikipedia.apk`
+2. Start Appium Server with Inspector. I've found that using other port than the default (4723) is the most foolproof way.
 
 ```bash
 # Custom port (e.g., 4725)

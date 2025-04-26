@@ -5,6 +5,9 @@
 *.ipr
 out/
 
+# App
+src/app/
+
 # Compiled class file
 *.class
 
