@@ -12,7 +12,7 @@ import pages.AndroidHomePage;
  */
 public class ManualStartTest extends BaseTest {
     @Test
-    public void startApp() {
+    public void start_app() {
         AndroidHomePage page = new AndroidHomePage(driver);
 
         page.openWikipediaApp();
