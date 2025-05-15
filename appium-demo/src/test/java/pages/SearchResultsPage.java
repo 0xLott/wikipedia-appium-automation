@@ -3,6 +3,7 @@ package pages;
 import io.appium.java_client.AppiumDriver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import static utils.Utils.sleep;
 
 import java.util.List;
 
@@ -33,14 +34,6 @@ public class SearchResultsPage {
                 sleep(3000);
                 break;
             }
-        }
-    }
-
-    private void sleep(int milliseconds) {
-        try {
-            Thread.sleep(milliseconds);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
         }
     }
 }

@@ -2,11 +2,9 @@ package pages;
 
 import io.appium.java_client.AppiumDriver;
 import org.openqa.selenium.By;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import static utils.Utils.sleep;
 
 public class OnboardingPage {
-    private static final Logger log = LoggerFactory.getLogger(OnboardingPage.class);
     private AppiumDriver driver;
 
     // Locators
@@ -64,13 +62,5 @@ public class OnboardingPage {
         language = By.xpath(String.format("//androidx.recyclerview.widget.RecyclerView[@resource-id=\"org.wikipedia:id/languages_list_recycler\"]/android.widget.LinearLayout[%d]", index));
 
         driver.findElement(language).click();
-    }
-
-    private void sleep(int milliseconds) {
-        try {
-            Thread.sleep(milliseconds);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
     }
 }
