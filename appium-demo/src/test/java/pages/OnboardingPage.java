@@ -51,14 +51,15 @@ public class OnboardingPage {
     public void addLanguage(int index) {
         By language;
 
+        sleep(3000);
         if (driver.findElements(addEditLanguagesTitle).isEmpty()) {
             driver.findElement(addEditLanguagesBtn).click();
         }
 
-        sleep(5000);
+        sleep(3000);
         driver.findElement(addLanguageBtn).click();
 
-        sleep(5000);
+        sleep(3000);
         language = By.xpath(String.format("//androidx.recyclerview.widget.RecyclerView[@resource-id=\"org.wikipedia:id/languages_list_recycler\"]/android.widget.LinearLayout[%d]", index));
 
         driver.findElement(language).click();
